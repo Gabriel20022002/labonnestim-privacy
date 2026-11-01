@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Politique de confidentialité de l'application La Bonn Estim.">
+  <title>Politique de confidentialité — La Bonn Estim</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #fbf5e6;
+      --card: #fffaf0;
+      --ink: #2d1d16;
+      --muted: #755f50;
+      --red: #9c2f2a;
+      --gold: #b88745;
+      --line: #dfc791;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px 16px 48px;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+    main { max-width: 820px; margin: 0 auto; }
+    header, section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 0 0 18px;
+      box-shadow: 0 4px 16px rgba(45, 29, 22, .07);
+    }
+    header { text-align: center; border-top: 6px solid var(--red); }
+    h1 { margin: 0 0 8px; color: var(--red); font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.15; }
+    h2 { margin: 0 0 12px; color: var(--red); font-size: 1.35rem; line-height: 1.25; }
+    h3 { margin: 22px 0 6px; color: var(--ink); font-size: 1.08rem; }
+    p, ul { margin: 10px 0; }
+    ul { padding-left: 1.35rem; }
+    .meta { color: var(--muted); margin: 4px 0; }
+    .notice { border-left: 4px solid var(--gold); padding-left: 14px; color: var(--muted); }
+    a { color: var(--red); font-weight: 700; }
+    footer { max-width: 820px; margin: 26px auto 0; color: var(--muted); text-align: center; font-size: .9rem; }
+    @media (max-width: 520px) {
+      body { padding-top: 18px; }
+      header, section { padding: 18px; border-radius: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Politique de confidentialité</h1>
+      <p class="meta"><strong>La Bonn Estim</strong></p>
+      <p class="meta">Version de l'application : 1.1.1</p>
+      <p class="meta">Dernière mise à jour : 2 novembre 2026</p>
+    </header>
+
+    <section>
+      <h2>1. Responsable du traitement</h2>
+      <p>La Bonn Estim est éditée par :</p>
+      <ul>
+        <li><strong>Nom :</strong> Gabriel Khalfallah</li>
+        <li><strong>Statut :</strong> personne physique</li>
+        <li><strong>Adresse :</strong> 8 rue Minvielle, Hyères</li>
+        <li><strong>Contact :</strong> <a href="mailto:labonnestim@gmail.com">labonnestim@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Données traitées</h2>
+      <p>Selon les fonctionnalités utilisées, La Bonn Estim peut traiter les données suivantes.</p>
+
+      <h3>Photos et indications de recherche</h3>
+      <p>Les photos prises ou choisies pour estimer un objet, ainsi que l'indice textuel facultatif saisi au moment du scan, sont transmis au service d'estimation. Les photos peuvent être traitées par une Edge Function Supabase, puis par les services nécessaires à la recherche visuelle et à l'analyse IA, notamment Google Lens via SerpApi, OpenAI et des services Google utilisés lorsque le chemin technique correspondant est activé.</p>
+      <p class="notice">Les photos temporaires d'analyse sont destinées à être supprimées après traitement. Les durées de conservation des fournisseurs tiers dépendent de leurs propres politiques et doivent être consultées sur leurs sites respectifs.</p>
+
+      <h3>Collection personnelle et préférences</h3>
+      <p>Le Butin, la Collection, les prix d'achat, les estimations, les marges, le ROI, les statuts, les favoris locaux, le compteur de scans et certaines préférences sont conservés localement sur l'appareil. La Collection personnelle n'est pas publiée automatiquement et n'est pas envoyée à Supabase comme inventaire complet.</p>
+
+      <h3>Annonces du Marché partagé</h3>
+      <p>Lorsque l'utilisateur choisit de publier une annonce, l'application peut transmettre et stocker le titre, la description, la catégorie, l'état, les prix, la ville, les photos choisies, ainsi qu'une adresse e-mail ou un numéro de téléphone de contact fourni par l'utilisateur.</p>
+      <p>Les coordonnées de contact et le contenu d'une annonce sont destinés à être visibles par les utilisateurs du Marché conformément au fonctionnement de cette fonctionnalité. Les photos d'annonces sont actuellement servies par des URLs Storage publiques.</p>
+
+      <h3>Localisation</h3>
+      <p>Avec l'autorisation de l'utilisateur, l'application utilise la localisation au premier plan pour centrer la carte et trier les brocantes par distance. La position utilisée pour ce calcul est traitée localement par l'application. Les SDK cartographiques peuvent recevoir les informations nécessaires à l'affichage de la carte selon leurs propres conditions.</p>
+
+      <h3>Identifiants et modération</h3>
+      <p>L'application peut utiliser une session Supabase anonyme et un identifiant technique de l'appareil pour faire fonctionner le Marché, les favoris, les signalements et les outils de modération. Ces identifiants ne constituent pas un profil nominatif classique, mais peuvent être associés aux actions effectuées dans l'application.</p>
+      <p>Les signalements peuvent contenir une catégorie, un commentaire et des informations techniques nécessaires à leur traitement.</p>
+    </section>
+
+    <section>
+      <h2>3. Finalités</h2>
+      <ul>
+        <li>analyser les photos et fournir une estimation indicative ;</li>
+        <li>rechercher des événements de brocante autour de l'utilisateur ;</li>
+        <li>publier et consulter des annonces volontaires dans le Marché ;</li>
+        <li>gérer les favoris, les signalements et la modération ;</li>
+        <li>assurer la sécurité et le fonctionnement technique de l'application.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Services utilisés</h2>
+      <p>Les fonctionnalités en ligne peuvent utiliser :</p>
+      <ul>
+        <li><strong>Supabase :</strong> authentification anonyme, base de données, Edge Functions et Storage ;</li>
+        <li><strong>Google Maps SDK :</strong> affichage cartographique ;</li>
+        <li><strong>Google Lens via SerpApi :</strong> recherche visuelle et résultats de comparaison ;</li>
+        <li><strong>OpenAI et certains services Google :</strong> traitement IA lorsque le chemin d'analyse correspondant est utilisé ;</li>
+        <li><strong>vide-greniers.org :</strong> consultation de données publiques d'événements.</li>
+      </ul>
+      <p>Les conditions et lieux de traitement propres à chaque fournisseur sont définis par leurs politiques respectives. Aucune région d'hébergement précise n'est affirmée ici sans vérification dans les tableaux de bord concernés.</p>
+    </section>
+
+    <section>
+      <h2>5. Conservation et suppression</h2>
+      <ul>
+        <li>Les données locales peuvent être supprimées en effaçant les données de l'application ou en la désinstallant.</li>
+        <li>Une annonce peut être retirée du Marché depuis les fonctionnalités prévues ; le retrait peut conserver une trace technique nécessaire à la modération et à l'intégrité du service.</li>
+        <li>Les données d'annonces, de favoris et de signalements peuvent être conservées jusqu'à leur suppression effective ou pour les besoins de sécurité et de modération.</li>
+        <li>Les demandes de suppression ou d'exercice des droits peuvent être envoyées à <a href="mailto:labonnestim@gmail.com">labonnestim@gmail.com</a>.</li>
+      </ul>
+      <p>Aucune durée chiffrée de conservation n'est indiquée lorsque celle-ci dépend d'un fournisseur ou d'un réglage qui doit encore être confirmé.</p>
+    </section>
+
+    <section>
+      <h2>6. Vos droits</h2>
+      <p>Selon la réglementation applicable, vous pouvez demander l'accès, la rectification, la limitation ou la suppression de vos données, ou vous opposer à certains traitements. Contactez l'éditeur à <a href="mailto:labonnestim@gmail.com">labonnestim@gmail.com</a>.</p>
+      <p>Vous pouvez également retirer les autorisations de localisation et de caméra dans les réglages Android. Certaines fonctions ne fonctionneront alors plus.</p>
+    </section>
+
+    <section>
+      <h2>7. Sécurité</h2>
+      <p>Les échanges avec les services en ligne sont effectués via HTTPS lorsque ces services sont utilisés. Les données locales bénéficient des protections du système Android. L'application ne doit pas être décrite comme fournissant un chiffrement applicatif séparé du stockage local.</p>
+    </section>
+
+    <section>
+      <h2>8. Enfants</h2>
+      <p>La Bonn Estim n'est pas conçue pour collecter volontairement des données d'enfants et ne propose pas de contenu destiné spécifiquement aux enfants.</p>
+    </section>
+
+    <section>
+      <h2>9. Modifications</h2>
+      <p>Cette politique peut être mise à jour lorsque les fonctionnalités, les fournisseurs ou les traitements évoluent. La date de dernière mise à jour sera modifiée en cas de changement substantiel.</p>
+    </section>
+  </main>
+  <footer>La Bonn Estim · Gabriel Khalfallah · <a href="mailto:labonnestim@gmail.com">labonnestim@gmail.com</a></footer>
+</body>
+</html>
